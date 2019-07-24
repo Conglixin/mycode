@@ -1,0 +1,9 @@
+h1{
+  font-size: 50px;
+  color: blue;
+}
+div{
+  width: 200px;
+  height: 200px;
+  background-image: url('../css/01.jpg');
+}

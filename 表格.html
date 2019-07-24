@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./jquery-3.4.1.js"></script>
+    <style>
+        table{
+      border:1px solid black;
+      border-collapse: collapse;
+      position: absolute;
+      top: 50px;
+    }
+    td{
+      border:1px solid black
+    }
+    thead{
+      font-size: 30px;
+      font-weight: bold;  
+    }
+    </style>
+</head>
+
+<body>
+    <table>
+        <input type="text" id="haha">
+        <thead>
+            <tr>
+                <td>召唤师</td>
+                <td>技能</td>
+                <td>技能</td>
+            </tr>
+        </thead>
+        <tr>
+            <td>寒冰</td>
+            <td>闪现</td>
+            <td>治疗</td>
+        </tr>
+        <tr>
+            <td>蛮王</td>
+            <td>疾步</td>
+            <td>引燃</td>
+        </tr>
+        <tr>
+            <td>盲生</td>
+            <td>闪现</td>
+            <td>惩戒</td>
+        </tr>
+        <tr>
+            <td>亚索</td>
+            <td>闪现</td>
+            <td>引燃</td>
+        </tr>
+        <tr>
+            <td>巴德</td>
+            <td>闪现</td>
+            <td>虚弱</td>
+        </tr>
+    </table>
+    <script>
+     
+    $("#haha").on("keyup",function(){
+        var HAHA= $(this).val()
+        $("table tr").css("display","none");
+        $("table tr:contains("+HAHA+")").css("display","block");
+    })
+    </script>
+</body>
+
+</html>

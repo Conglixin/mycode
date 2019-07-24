@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .red{
+            height: 100px;
+            width: 20px;
+            background-color: red;
+            
+            position: absolute;
+            top: 200px;
+            left: 50%;
+            margin-top: 58px;
+        }
+        .blue{
+            height: 130px;
+            width: 15px;
+            background-color: blue;
+            position: absolute;
+            top: 200px;
+            left: 50%;
+            margin-top: 33px;
+            transform: rotate(20deg);
+            transform-origin: 27px 130px
+        }
+        .green{
+            height: 160px;
+            width: 10px;
+            background-color: green;
+            margin: 0 auto; 
+            position: absolute;
+            top: 200px;
+            left: 50%;  
+            transform: rotate(45deg);
+            transform-origin: 5px 158px;
+            animation-name: test;
+            animation-duration: 60s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        .haha{
+            position: relative;
+        }
+        .fang{
+            width: 500px;
+            height: 500px;
+            border: 2px solid black;
+            position: absolute;
+            top:52px;
+            left: 432px;
+            border-radius: 50% 50%  
+        }
+        .kafei{
+            width: 500px;
+            height: 500px;
+            border: 2px dashed black;
+            position: absolute;
+            top:52px;
+            left: 432px;
+        }
+        @keyframes test{
+            0%{ 
+              transform: rotate(0deg)
+            }
+            100%{
+            transform: rotate(360deg)
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="haha">
+    <div class="kafei"></div>
+    <div class="fang"></div>
+    <div class="red"></div>
+    <div class="blue"></div>
+    <div class="green"></div>
+</div>
+</body>
+</html>

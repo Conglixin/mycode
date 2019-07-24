@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./jquery-3.4.1.js"></script>
+</head>
+
+<body>
+    <h1>你爱好的运动是？</h1>
+    <input type="checkbox">
+    <span>篮球</span>
+    <input type="checkbox">
+    <span>足球</span>
+    <input type="checkbox">
+    <span>排球</span>
+    <input type="checkbox">
+    <span>羽毛球</span>
+    <div>
+        <button id="but">全选</button>
+        <button id="box">全不选</button>
+        <button id="some">反选</button>
+    </div>
+    <script>
+        $("#but").on("click", function () {
+            $("input").prop('checked', true)
+        })
+        $("#box").on("click", function () {
+            $("input").prop('checked', false)
+        })
+        $("#some").on("click", function () {
+            $("input").on('click', function () {
+                $('input').css("visibity", "none")
+            })
+        })
+    </script>
+</body>
+
+</html>
