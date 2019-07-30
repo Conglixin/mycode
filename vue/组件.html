@@ -9,21 +9,19 @@
 </head>
 <body>
     <div id="app">
-        <button v-on:click="addEvent">搜索</button>
-        <div>{{mot}}</div>
+        <lixin :say="emse"></lixin>
     </div>
     <script>
-    new Vue({
-        el: "#app",
-        data:{
-            mot:"1",
-            },
-     methods: {
-        addEvent(){
-            this.mot+=1
-        }
-    },
-});
+   Vue.component("lixin",{
+       template:`<h1>哈哈</h1>`,
+       props:["say"]
+   })
+   new Vue({
+       el:"#app",
+       data:{
+           emse:"哈哈"
+       },
+   })
     </script>
 </body>
 </html>
